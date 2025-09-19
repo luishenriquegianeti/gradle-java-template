@@ -1,8 +1,19 @@
 package application;
 
+import application.lista.ListaSimples;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello World!!!");
+       
+        ListaSimples lista = new ListaSimples();
+
+        Lista.adicionar("Primeiro");
+        Lista.adicionar("Segundo");
+        Lista.adicionar("Terveiro");
+
+        lista.remover(1);
+
+        System.out.println(lista);
     }
 }
 
